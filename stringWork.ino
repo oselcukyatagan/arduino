@@ -301,23 +301,26 @@ void loop(){
       case 'A': 
         A();
         delay(letterBreak);
+        Serial.println("A");
         break;
       case 'B':
         B();
         delay(letterBreak);
+        Serial.println("B");
         break;
       case 'C':
-          C();
-          delay(letterBreak);
-          break;
+        C();
+        delay(letterBreak);
+          
+        break;
       case 'D':
-          D();
-          delay(letterBreak);
-          break;
+        D();
+        delay(letterBreak);
+        break;
       case 'E':
-          E();
-          delay(letterBreak);
-          break;
+        E();
+        delay(letterBreak);
+        break;
   /*
       case 'F':
           F();
@@ -325,90 +328,90 @@ void loop(){
           break;
   */
       case 'G':
-          G();
-          delay(letterBreak);
-          break;
+        G();
+        delay(letterBreak);
+        break;
       case 'H':
-          H();
-          delay(letterBreak);
-          break;
+        H();
+        delay(letterBreak);
+        break;
       case 'I':
-          I();
-          delay(letterBreak);
-          break;
+        I();
+        delay(letterBreak);
+        break;
       case 'J':
-          J();
-          delay(letterBreak);
-          break;
+        J();
+        delay(letterBreak);
+        break;
       case 'K':
-          K();
-          delay(letterBreak);
-          break;
+        K();
+        delay(letterBreak);
+        break;
       case 'L':
-          L();
-          delay(letterBreak);
-          break;
+        L();
+        delay(letterBreak);
+        break;
       case 'M':
-          M();
-          delay(letterBreak);
-          break;
+        M();
+        delay(letterBreak);
+        break;
       case 'N':
-          N();
-          delay(letterBreak);
-          break;
+        N();
+        delay(letterBreak);
+        break;
       case 'O':
-          O();
-          delay(letterBreak);
-          break;
+        O();
+        delay(letterBreak);
+        break;
       case 'P':
-          P();
-          delay(letterBreak);
-          break;
+        P();
+        delay(letterBreak);
+        break;
       case 'Q':
-          Q();
-          delay(letterBreak);
-          break;
+        Q();
+        delay(letterBreak);
+        break;
       case 'R':
-          R();
-          delay(letterBreak);
-          break;
+        R();
+        delay(letterBreak);
+        break;
       case 'S':
-          S();
-          delay(letterBreak);
-          break;
+        S();
+        delay(letterBreak);
+        break;
       case 'T':
-          T();
-          delay(letterBreak);
-          break;
+        T();
+        delay(letterBreak);
+        break;
       case 'U':
-          U();
-          delay(letterBreak);
-          break;
+        U();
+        delay(letterBreak);
+        break;
       case 'V':
-          V();
-          delay(letterBreak);
-          break;
+        V();
+        delay(letterBreak);
+        break;
       case 'W':
-          W();
-          delay(letterBreak);
-          break;
+        W();
+        delay(letterBreak);
+        break;
       case 'X':
-          X();
-          delay(letterBreak);
-          break;
+        X();
+        delay(letterBreak);
+        break;
       case 'Y':
-          Y();
-          delay(letterBreak);
-          break;
+        Y();
+        delay(letterBreak);
+        break;
       case 'Z':
-          Z();
-          delay(letterBreak);
-          break;
+        Z();
+        delay(letterBreak);
+        break;
       case ' ':
         delay(wordBreak);   
       default:
-          Serial.print("Invalid character");
-          break;
+        Serial.print("");
+        break;
      }
   }
 
@@ -416,5 +419,9 @@ void loop(){
   for (int i = 0; i < inputLen; i++) { // clear the string array
     letters[i] = '\0';
   }
+
+
+
+
 
 }
