@@ -96,6 +96,8 @@ void F(){
   dot();
 }
 */
+
+
 void G(){
   dash();
   delay(signBreak);
@@ -316,10 +318,12 @@ void loop(){
           E();
           delay(letterBreak);
           break;
+  /*
       case 'F':
           F();
           delay(letterBreak);
           break;
+  */
       case 'G':
           G();
           delay(letterBreak);
@@ -403,8 +407,8 @@ void loop(){
       case ' ':
         delay(wordBreak);   
       default:
-          Serial.print("Invalid character")
-        break;
+          Serial.print("Invalid character");
+          break;
      }
   }
 
@@ -413,7 +417,4 @@ void loop(){
     letters[i] = '\0';
   }
 
-
-
-
-} 
+}
