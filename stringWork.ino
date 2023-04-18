@@ -288,7 +288,7 @@ void loop(){
   inputLen = min(inputLen, letterArraySize); // clear unnecessary memory
 
   for (int i = 0; i < inputLen; i++) {
-    letters[i] = input.charAt(i); // Store the letters in the array
+    letters[i] = toupper(input.charAt(i)); // Store the letters in the array
   }
 
   for (int i = 0; i < inputLen; i++) { //print the letters with a space between
