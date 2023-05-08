@@ -1,21 +1,20 @@
-
 String ins = "Write: ";
 String input;
 
 const int letterArraySize = 50;
 char letters[letterArraySize];
 
-int led = 9;
+int led = 7;
 
-int buzzer = 7;
-int buzzFreq = 400;
+int buzzer = 10;
+int buzzFreq = 500;
 
 int dotWait = 100;
 int dashWait = 300;
 
 int signBreak = 100;
 int letterBreak = 300;
-int wordBreak = 400;
+int wordBreak = 300;
 
 void dotSound(){
   
@@ -85,8 +84,8 @@ void E(){
   dot();
 }
 
-/*
-void F(){
+
+void Fr(){
   dot();
   delay(signBreak);
   dot();
@@ -95,8 +94,6 @@ void F(){
   delay(signBreak);
   dot();
 }
-*/
-
 
 void G(){
   dash();
@@ -271,7 +268,8 @@ void Z(){
 void setup(){
 
 	pinMode(led, OUTPUT);
-  Serial.begin(9600);
+  pinMode(buzzer, OUTPUT);
+  Serial.begin(115200);
 
 }
 
@@ -323,13 +321,11 @@ void loop(){
         delay(letterBreak);
         Serial.println("E");
         break;
-  /*
       case 'F':
-          F();
+          Fr();
           delay(letterBreak);
           Serial.println("F");
           break;
-  */
       case 'G':
         G();
         delay(letterBreak);
