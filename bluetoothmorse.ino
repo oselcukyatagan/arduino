@@ -11,7 +11,7 @@ SoftwareSerial bt_comm(7,6);
 int led = 12;
 
 int buzzer = 2;
-int buzzFreq = 600;
+int buzzFreq = 550;
 
 int dotWait = 100;
 int dashWait = 300;
@@ -298,6 +298,8 @@ void loop(){
   for (int i = 0; i < inputLen; i++) { //print the letters with a space between
     bt_comm.print(letters[i]);
   }
+  
+  bt_comm.println("");
 
 
   for (int i = 0; i < inputLen; i++) { 
@@ -461,8 +463,10 @@ void loop(){
       case ' ':
         delay(wordBreak);   
         bt_comm.println(" ");
+        Serial.println(" ");
       default:
         bt_comm.print("");
+        Serial.println("");
         break;
      }
   }
