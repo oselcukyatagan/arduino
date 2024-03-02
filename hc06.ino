@@ -1,3 +1,5 @@
+// Bluetooth module test code.
+
 #include <SoftwareSerial.h>
 
 int red = 12;
