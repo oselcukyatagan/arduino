@@ -38,7 +38,7 @@ void alarm(){
   delayMicroseconds(microsec);
 }
 
- void what(){
+ void safe(){
    Serial.println("safe");
  }
 
@@ -55,7 +55,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   int isTaken = distanceControl(20);
 
-  isTaken ? alarm() : what();
+  isTaken ? alarm() : safe();
 
 }
 
